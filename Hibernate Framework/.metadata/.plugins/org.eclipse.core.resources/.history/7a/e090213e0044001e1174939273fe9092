@@ -1,0 +1,22 @@
+package com.highradius.action;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.highradius.pojo.Answers;
+import com.highradius.pojo.Question;
+
+public class FetchAction {
+	public static void main(String[] args) {
+		Configuration configuration = new Configuration();
+		
+		configuration.configure("hibernate.cfg.xml");
+		
+		SessionFactory factory = configuration.buildSessionFactory();
+		
+		System.out.println("Fetching of data will begin !!\n");
+		
+		Question question = new Question();
+		Answers answers = new Answers();
+	}
+}

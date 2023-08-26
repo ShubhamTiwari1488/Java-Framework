@@ -1,0 +1,15 @@
+package com.highradius.action;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class GetAction {
+	
+	public static void main(String[] args) {
+		System.out.println("Fetching will start");
+		
+		Configuration configuration = new Configuration();
+		configuration.configure("hibernate.cfg.xml");
+		SessionFactory sessionFactory = configuration.buildSessionFactory();
+	}
+}

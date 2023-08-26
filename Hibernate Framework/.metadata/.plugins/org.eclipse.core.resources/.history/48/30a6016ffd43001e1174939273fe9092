@@ -1,0 +1,10 @@
+package com.highradius.action;
+
+import org.hibernate.cfg.Configuration;
+
+public class Action {
+	public static void main(String[] args) {
+		Configuration configuration = new Configuration();
+		configuration.configure("hibernate.cfg.xml");
+	}
+}

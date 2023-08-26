@@ -1,0 +1,7 @@
+package com.highradius.pojo;
+
+public class Person {
+	private int pid;
+	private String pname;
+	private Address address;
+}

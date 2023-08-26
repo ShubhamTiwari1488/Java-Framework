@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Address -->
+	<bean class="com.highradius.address.Address" name="address">
+		<constructor-arg name="street" value="Street 1" type="String"/>
+		<constructor-arg name="city" value="Jamshedpur" type="String"/>
+	</bean>
+	
+	<!-- Person -->
+	<bean class="com.highradius.person.Person" name="person">
+		<property name="name" value="Shubham Tiwari" />
+		<property name="age" value="23" />
+	</bean>
+</beans>

@@ -1,0 +1,5 @@
+package com.highradius.annotation;
+
+public class App {
+
+}

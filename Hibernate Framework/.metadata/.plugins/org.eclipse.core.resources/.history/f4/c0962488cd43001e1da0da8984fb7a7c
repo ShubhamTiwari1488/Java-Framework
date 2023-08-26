@@ -1,0 +1,8 @@
+package com.highradius.action;
+
+public class GetAction {
+	
+	public static void main(String[] args) {
+		System.out.println("Fetching will start");
+	}
+}

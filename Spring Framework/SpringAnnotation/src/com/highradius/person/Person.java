@@ -1,0 +1,49 @@
+package com.highradius.person;
+
+import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Qualifier;
+
+import com.highradius.address.Address;
+
+public class Person {
+	private String name;
+	private int age;
+	
+	@Autowired
+//	@Qualifier("address")	// It is used if you want byName annotation. Without it , it would be byType
+	private Address address;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	
+//	@Autowired
+	public void setAddress(Address address) {
+		System.out.println("Address value is set!!");
+		this.address = address;
+	}
+	
+//	@Autowired
+//	public Person(Address address) {
+//		super();
+//		System.out.println("I am inside the constructor!!");
+//		this.address = address;
+//	}
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", address=" + address.toString() + "]";
+	}	
+}

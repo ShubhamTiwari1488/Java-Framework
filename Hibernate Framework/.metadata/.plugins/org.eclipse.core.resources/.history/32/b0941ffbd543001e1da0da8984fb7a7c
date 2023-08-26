@@ -1,0 +1,48 @@
+package com.highradius.action;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.highradius.pojo.Certificate;
+import com.highradius.pojo.User;
+
+public class ActionClass {
+	public static void main(String[] args) {
+		System.out.println("Project Started");
+		
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory sessionFactory = cfg.buildSessionFactory();
+		
+		System.out.println(sessionFactory);
+		System.out.println(sessionFactory.isClosed());
+		
+		User user = new User();
+		
+		user.setId(17195);
+		user.setName("Shubham Tiwari");
+		user.setCountry("India");
+		user.setEmail("shubham@gmail.com");
+		
+		Certificate certificate = new Certificate();
+		certificate.setCourse("BTech");
+		certificate.setStartDate(new Date());
+		
+		user.setCertificate(certificate);
+		
+		Session session = sessionFactory.openSession();
+		
+		Transaction transaction = session.beginTransaction();
+		
+		session.save(user);
+		
+		transaction.commit();
+		
+		session.close();
+		sessionFactory.close();
+	}
+}

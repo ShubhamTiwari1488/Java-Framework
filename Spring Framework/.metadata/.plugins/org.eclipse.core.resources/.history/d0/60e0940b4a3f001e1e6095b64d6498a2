@@ -1,0 +1,16 @@
+package com.highradius.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.highradius.demo.Employee;
+
+public class Main {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("application",Employee.class);
+		
+		Employee employee = (Employee)context.getBean("emp");
+		
+		System.out.println(employee);
+	}
+}

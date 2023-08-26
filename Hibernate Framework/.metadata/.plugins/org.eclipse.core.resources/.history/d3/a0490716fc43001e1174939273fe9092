@@ -1,0 +1,21 @@
+package com.highradius.pojo;
+
+public class Answers {
+	private int aid;
+	private String ans;
+	
+	public int getAid() {
+		return aid;
+	}
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+	public String getAns() {
+		return ans;
+	}
+	public void setAns(String ans) {
+		this.ans = ans;
+	}
+	
+	
+}

@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author KIIT
+ *
+ */
+module SpringDemo {
+	requires spring.context;
+}

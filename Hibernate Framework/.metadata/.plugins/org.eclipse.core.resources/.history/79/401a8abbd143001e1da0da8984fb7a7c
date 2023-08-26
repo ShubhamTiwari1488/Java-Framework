@@ -1,0 +1,6 @@
+package com.highradius.pojo;
+
+public class Certificate {
+	private String course;
+	private Date startDate;
+}

@@ -1,0 +1,25 @@
+package com.highradius.action;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.highradius.pojo.User;
+
+public class GetAction {
+	
+	public static void main(String[] args) {
+		System.out.println("Fetching will start");
+		
+		Configuration configuration = new Configuration();
+		configuration.configure("hibernate.cfg.xml");
+		SessionFactory sessionFactory = configuration.buildSessionFactory();
+		
+		System.out.println(sessionFactory);
+		System.out.println(sessionFactory.isClosed());
+		
+		User user = new User();
+		
+		Session session = sessionFactory.openSession();
+	}
+}

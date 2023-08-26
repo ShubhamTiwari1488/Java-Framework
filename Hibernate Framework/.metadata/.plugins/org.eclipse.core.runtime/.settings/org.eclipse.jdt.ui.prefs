@@ -1,0 +1,8 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="org.hibernate.cfg.Configuration"><rhs name\="org.hibernate.cfg.Configuration"/></lhs><lhs name\="com.highradius.pojo.User"><rhs name\="com.highradius.pojo.User"/></lhs><lhs name\="com.highradius.pojo.Certificate"><rhs name\="com.highradius.pojo.Certificate"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.sql.Date"/><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.sql.Date"/><rhs name\="java.util.Date"/></lhs><lhs name\="com.highradius.pojo.Question"><rhs name\="com.highradius.pojo.Question"/></lhs><lhs name\="com.highradius.pojo.Answer"><rhs name\="com.highradius.pojo.Answer"/></lhs><lhs name\="com.highradius.pojo.Answers"><rhs name\="com.highradius.pojo.Answers"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="com.highradius.pojo.Person"><rhs name\="com.highradius.pojo.Person"/></lhs><lhs name\="com.highradius.pojo.Address"><rhs name\="com.highradius.pojo.Address"/></lhs></history>
+content_assist_number_of_computers=17
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
